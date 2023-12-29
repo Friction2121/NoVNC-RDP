@@ -8,4 +8,4 @@ EXPOSE 80
 ENV RESOLUTION 1707x1067
 
 # Start the command to run NoVNC
-v
+CMD ["supervisord" ,  "-c" ,  "/etc/supervisor/supervisord.conf"]
